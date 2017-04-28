@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 20170428052815) do
   create_table "parks", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "allows_pets"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "pets", force: :cascade do |t|
